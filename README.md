@@ -31,6 +31,6 @@ Make sure you commit the image after bundle install to update all the static fil
 
 You can then run the server using the start script.
 
-    $ docker run -d -p 3000:3000 -v $(pwd):/repo:rw coursemology2 /start.sh
+    $ docker run -p 3000:3000 -v $(pwd):/repo:rw coursemology2 /start.sh
     
 From the host machine, navigate to `http://<your docker IP>:3000/`.
