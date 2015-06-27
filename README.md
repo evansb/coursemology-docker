@@ -29,8 +29,8 @@ Make sure you commit the image after bundle install to update all the static fil
         511a5cac00cb        coursemology2:latest
     $ docker commit 511a5cac00cb coursemology2
 
-You can then run the server
+You can then run the server using default start script.
 
-    $ docker run -d -p 3000:3000 -v $(pwd):/repo coursemology2 /bin/bash -c "cd repo && ./bin/rails server -b 0.0.0.0"
+    $ docker run -d -p 3000:3000 -v $(pwd):/repo coursemology2
     
 From the host machine, navigate to `http://<your docker IP>:3000/`.
