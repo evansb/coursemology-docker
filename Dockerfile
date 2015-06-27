@@ -34,7 +34,7 @@ RUN /etc/init.d/postgresql start \
     && psql -c "VACUUM FREEZE" template1
 
 ADD start.sh /start.sh
+RUN chmod a+x /start.sh
 
-# Start server by default
-CMD sh /start.sh
+# Start PostgreSQL server by default
 ENTRYPOINT /etc/init.d/postgresql start && /bin/sh -c "$0"
