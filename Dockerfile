@@ -33,5 +33,5 @@ RUN /etc/init.d/postgresql start \
        datname = 'template1';" postgres \
     && psql -c "VACUUM FREEZE" template1
 
-# Start Postgresql by default
-CMD /etc/init.d/postgresql start
+# Start Postgresql on boot
+RUN update-rc.d postgresql defaults
