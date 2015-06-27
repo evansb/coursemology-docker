@@ -20,7 +20,7 @@ Environment is ready, you can start building coursemology by mounting the reposi
     # cd repo
     # bundle install
     # rake db:setup
-    And so on, i.e follow Coursemology2 README
+    And so on, i.e please follow [Coursemology2 README](https://github.com/Coursemology/coursemology2)
 
 Make sure you commit the image after bundle install to update all the static files inside the container.
 
